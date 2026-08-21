@@ -1,0 +1,28 @@
+# Real business workbooks and temporary Excel files
+*.xlsx
+*.xls
+*.xlsm
+~$*
+outputs/
+!examples/
+!examples/*.xlsx
+
+# Local runtime and verification artifacts
+*.log
+*.ndjson
+.codex_work/
+.tmp/
+
+# Installed dependencies and generated builds
+node_modules/
+runtime/
+bin/
+obj/
+*.exe
+*.zip
+
+# Local tooling
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

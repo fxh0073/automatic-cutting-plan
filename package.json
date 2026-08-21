@@ -1,0 +1,22 @@
+{
+  "name": "automatic-cutting-plan",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open-source cutting-plan generator for profile materials and Excel work cards.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/build_cutting_plan.mjs",
+    "build": "node --check src/build_cutting_plan.mjs",
+    "test": "node test/engine_smoke_test.mjs"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0"
+  },
+  "overrides": {
+    "uuid": "11.1.1"
+  },
+  "license": "MIT"
+}
