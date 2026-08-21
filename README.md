@@ -26,6 +26,14 @@
 
 当前源码仓库不提交 exe、运行时、ZIP 包或真实工艺卡；这些内容应在发布 Release 时单独整理并再次检查。
 
+独立版可以在有 Node.js 和 .NET Framework 开发环境的 Windows 电脑上通过以下脚本重新打包：
+
+```powershell
+.\scripts\build_standalone.ps1 -OutputDirectory .\dist\自动下料程序_独立版
+```
+
+脚本会把公开依赖、Node.js 运行时、ExcelJS 引擎和 Windows 启动器放入同一个目录，并检查发布包中没有私有工作区依赖。目标电脑不需要安装 Node.js。
+
 ### 源码开发运行
 
 - Node.js 18 或更高版本；

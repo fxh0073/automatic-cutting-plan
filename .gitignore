@@ -4,6 +4,7 @@
 *.xlsm
 ~$*
 outputs/
+dist/
 !examples/
 !examples/*.xlsx
 
